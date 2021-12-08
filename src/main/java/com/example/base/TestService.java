@@ -9,14 +9,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TestService {
 
-    private final TestDao testDao;
+    private final TestMapper testMapper;
 
     public List<City> findByAll() {
-        return testDao.findByAll();
+        return testMapper.findByAll();
     }
 
     public List<City> findByAllToXml() {
-        return testDao.findByAllToXml();
+        return testMapper.findByAllToXml();
     }
 
 }
